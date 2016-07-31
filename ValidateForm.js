@@ -14,22 +14,27 @@ var lNameVal = lName.value;
 var emailVal = email.value;
 function Submit(){
 if (userVal.length < 5){
- Msg.textContent = "Username isn't long enough...";
+ Msg.textContent = "Username isn't long enough...Please refresh the page";
 } else {
  Msg.textContent = "";
 }
 if (passVal.length < 8){
- Msg.textContent = "Password isn't long enough...";
+ Msg.textContent = "Password isn't long enough...Please refresh the page";
 } else {
  Msg.textContent = "";
 } if (fNameVal == ""){
- Msg.textContent = "You didn't put your first name!";
+ Msg.textContent = "You didn't put your first name! Please refresh the page";
 } else {
  Msg.textContent = "";
 } if (lNameVal == ""){
- Msg.textContent = "You didn't put your last name!";
+ Msg.textContent = "You didn't put your last name! Please refresh the page";
 } else {
  Msg.textContent = "";
 }
 
+}
+
+if(userVal.length >= 5 && passVal.length >= 8 && fNameVal !== "" && lNameVal !== ""){
+ var Msg.textContent = "Login Succesful, signing in...";
+}
 }
