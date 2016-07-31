@@ -25,7 +25,7 @@ function Submit(){
    if (femail == "" )
  {
   document.form.Email.focus();
-  document.getElementById("errorBox").innerHTML = "enter the email";
+  document.getElementById("errorBox").innerHTML = "Enter an Email";
   return false;
   }else if(!emailRegex.test(femail)){
   document.form.Email.focus();
