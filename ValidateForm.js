@@ -31,7 +31,7 @@ if (passVal.length < 8){
 } else {
  Msg.textContent = "";
 }
- if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 > = x.length) {
+ if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= x.length) {
         Msg.textContent = "You didn't type a valid email address!";
         return false;
     } else {
