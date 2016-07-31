@@ -1,7 +1,7 @@
 var el = document.getElementById("input_password");
 var elMsg = document.getElementById("feedback");
-function checkPassword() {
  var pasword = el.value;
+function checkPassword() {
  if (password.length >= 8) {
   elMsg.textContent = "Not long enough...";
  } else { 
