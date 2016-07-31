@@ -1,16 +1,6 @@
 var el = document.getElementById("input_password");
 var elMsg = document.getElementById("feedback");
- var pasword = el.value;
-function checkPassword() {
- if (password.length >= 8) {
-  elMsg.textContent = "Not long enough...";
- } else { 
-  elMsg.textContent = " ";
- }
+function password(){
+ el.innerText = "Not long enough yet...";
 }
-function tipPassword() {
- elMsg.textContent = "Username must be at least 8 characters";
-}
-
 el.addEventListener("focus", tipPassword, false);
-el.addEventListener("blur", checkPassword, false);
