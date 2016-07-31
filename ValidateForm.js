@@ -3,4 +3,4 @@ var elMsg = document.getElementById("feedback");
 function password(){
  el.innerText = "Not long enough yet...";
 }
-el.addEventListener("focus", tipPassword, false);
+el.addEventListener("focus", password, false);
