@@ -1,9 +1,9 @@
-function validateForm() {
-    var x = document.forms["form"]["Email"].value;
-    var atpos = x.indexOf("@");
-    var dotpos = x.lastIndexOf(".");
-    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
-        alert("Not a valid e-mail address");
-        return false;
+function validatePass() {
+    var password = document.getElementByClassName("input_password");
+    var validate = password.value.length >= 8;
+    if(!valid) {
+        setErrorMessage(password, "Password must be at least 8 characters");
     }
+    return validate;
 }
+password.addEventListener("focus", validatePass, false);
