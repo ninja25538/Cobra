@@ -9,7 +9,7 @@ function checkPassword() {
  }
 }
 function tipPassword() {
- elMsg.innerHtml = "Username must be at least 8 characters";
+ elMsg.textContent = "Username must be at least 8 characters";
 }
 
 el.addEventListener("focus", tipPassword, false);
