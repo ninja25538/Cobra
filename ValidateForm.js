@@ -11,7 +11,7 @@ function tipPassword(){
  passMssg.className = "tip";
  passMsg.innerHTML = "Password must be at least 8 characters";
 }
-var pass = document.getElementByClassName("input_password");
-var passMsg = document.getElementByClassName("feedback");
+var pass = document.getElementById("input_password");
+var passMsg = document.getElementById("feedback");
 pass.addEventListener("focus", checkPassword, false);
 pass.addEventListener("blur", tipPassword, false); 
