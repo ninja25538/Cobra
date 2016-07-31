@@ -1,14 +1,12 @@
 function checkPassword(){
  var password = pass.value;
  if (password.length < 8) {
-  passMsg.id = "waring";
   passMsg.textContent = "Not long enough";
  } else {
   passMsg.textContent = " ";
  }
 }
 function tipPassword(){
- passMssg.id = "tip";
  passMsg.innerHTML = "Password must be at least 8 characters";
 }
 var pass = document.getElementById("input_password");
