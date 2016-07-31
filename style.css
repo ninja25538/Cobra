@@ -61,7 +61,7 @@ body{
 #password_form{
  padding:10px 0 10px 0px;
  }
-.input_password{
+#input_password{
  width:434px;
  padding:5px;
  font-size:18px;
