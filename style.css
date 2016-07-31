@@ -2,6 +2,9 @@
  margin:0px;
  padding:0px;
  }
+ .form{
+  float:right;
+ }
 body{
  font-family:Tahoma, Geneva, sans-serif;
  }
