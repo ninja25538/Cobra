@@ -3,7 +3,7 @@ var elMsg = document.getElementById("feedback");
 function password(){
  if (el < 8){
  elMsg.innerText = "Not long enough yet...";
- } else {
+ } else if (el >= 8) {
   elMsg.innerText = "Email, ok"
  }
 }
