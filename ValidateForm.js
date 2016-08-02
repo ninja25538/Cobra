@@ -34,8 +34,8 @@ if (passVal.length < 8){
 
 if(userVal.length >= 5 && passVal.length >= 8 && fNameVal !== "" && lNameVal !== ""){
  var Msg.textContent = "Login Succesful, signing in...";
- var localstorage.username = document.getElementById("input_username");
- var localstorage.pass = document.getElementById("input_password");
+} else {
+  var Msg.textContent = "Please fill out all the information correctly!"
 }
 }
 
