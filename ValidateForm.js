@@ -33,9 +33,9 @@ if (passVal.length < 8){
 }
 
 if(userVal.length >= 5 && passVal.length >= 8 && fNameVal !== "" && lNameVal !== ""){
- var Msg.textContent = "Login Succesful, signing in...";
+ Msg.textContent = "Login Succesful, signing in...";
 } else {
-  var Msg.textContent = "Please fill out all the information correctly!"
+  Msg.textContent = "Please fill out all the information correctly!";
 }
 }
 
