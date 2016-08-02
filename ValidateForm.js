@@ -39,5 +39,4 @@ if(userVal.length >= 5 && passVal.length >= 8 && fNameVal !== "" && lNameVal !==
 }
 }
 
-};
 
