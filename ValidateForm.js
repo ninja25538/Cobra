@@ -35,7 +35,10 @@ if (passVal.length < 8){
 if(userVal.length >= 5 && passVal.length >= 8 && fNameVal !== "" && lNameVal !== ""){
  Msg.textContent = "Login Succesful, signing in...";
 } else {
-  location.reload();
+  setTimeout(function(){
+    location.reload();
+  }, 3000);
+  
   Msg.textContent = "Please fill out all the information correctly!";
 }
 }
