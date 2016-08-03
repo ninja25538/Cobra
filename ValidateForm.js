@@ -37,7 +37,7 @@ if(userVal.length >= 5 && passVal.length >= 8 && fNameVal !== "" && lNameVal !==
 } else {
   setTimeout(function(){
     location.reload();
-  }, 3000);
+  }, 1500);
   
   Msg.textContent = "Please fill out all the information correctly!";
 }
