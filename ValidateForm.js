@@ -1,6 +1,6 @@
 var Msg = document.getElementById("Msg");
 function Submit(){
-    var x = document.forms["form"]["First_Name"]["Last_Name"].value;
+    var x = document.forms["form"]["First_Name"]["Email"].value;
     if (x == null || x == "") {
         Msg.textContent = "Please fill out all the information correctly!";
         return false;
