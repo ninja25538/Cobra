@@ -30,10 +30,6 @@ if (passVal.length < 8){
  Msg.textContent = "You didn't put your last name!";
 } else {
  Msg.textContent = "";
-}  if (atpos < 1 || dotpos < atpos+2 || dotpos+2 >= x.length) {
-        Msg.textContent = "You didn't put a valid email address!"
-        return false;
-    }
 }
 
 if(userVal.length >= 5 && passVal.length >= 8){
