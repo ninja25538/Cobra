@@ -1,5 +1,5 @@
 function Submit(){
-    var x = document.forms["form"]["username"]["Password"]["First Name"]["Last Name"]["Email"].value;
+    var x = document.forms["form"]["First_Name"].value;
     if (x == null || x == "") {
         Msg.textContent = "Please fill out all the information correctly!";
         return false;
