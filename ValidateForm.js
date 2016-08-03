@@ -1,3 +1,4 @@
+var Msg = document.getElementById("Msg");
 function Submit(){
     var x = document.forms["form"]["First_Name"].value;
     if (x == null || x == "") {
