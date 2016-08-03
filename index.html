@@ -31,25 +31,25 @@
        <form name="form" >
        <div id="errorBox"></div>
        <div class = "Name">
-        <input type = "text" name="First_Name" value = "" placeholder = "First Name"  id = "input_first_name">
-        <input type = "text" name = "Last_Name" value = "" placeholder = "Last Name" id = "input_last_name">
+        <input type = "text" name="First_Name" value = "" placeholder = "First Name"  id = "input_first_name" required>
+        <input type = "text" name = "Last_Name" value = "" placeholder = "Last Name" id = "input_last_name" required>
         </div>
         <div class = "username">
-          <input type = "text" name = "username" value = "" placeholder = "Username" id = "input_username">
+          <input type = "text" name = "username" value = "" placeholder = "Username" id = "input_username"> required
         </div>
       </div>
       <div id="email_form">
-        <input type="text" name="Email" value=""  placeholder="Valid Email" id = "input_email">
+        <input type="text" name="Email" value=""  placeholder="Valid Email" id = "input_email" required>
       </div>
       <div id="password_form">
-        <input type="password" name="Password" value=""  placeholder="Password" id = "input_password">
+        <input type="password" name="Password" value=""  placeholder="Password" id = "input_password" required>
       </div>
       <!--birthday details start-->
       <div>
         <h3 class="birthday_title">Birthday Info</h3>
       </div> 
       <div class = "birthday_info">
-        <select name="birthday_month">
+        <select name="birthday_month" required>
           <option value="" selected >Month</option>
           <option value = "1">January</option>
           <option value = "2">Februrary</option>
@@ -64,7 +64,7 @@
           <option value = "11">November</option>
           <option value = "12">December</option>
         </select>
-        <select name = "birthday">
+        <select name = "birthday" required>
          <option value = "" selected>Day</option>
          <option value = "1">1</option>
          <option value = "2">2</option>
@@ -97,7 +97,7 @@
          <option value = "30">30</option>
          <option value = "31">31</option>
          </select>
-        <select name = "birthday_year">
+        <select name = "birthday_year" required>
           <option value = "" selected>Year</option>
           <option value = "2016">2016</option>
           <option value = "2015">2015</option>
@@ -107,10 +107,10 @@
       </div>
       <!--birthday details ends-->
       <div id="radio_button">
-        <input type="radio" name="radiobutton" value="Male">
+        <input type="radio" name="radiobutton" value="Male" required>
         <label>Male</label>
         &nbsp;&nbsp;&nbsp;
-        <input type="radio" name="radiobutton" value="Female">
+        <input type="radio" name="radiobutton" value="Female" required>
         <label>Female</label>
       </div>
        <div>
