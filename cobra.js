@@ -16,8 +16,5 @@ function Submit(){
     http.send();
     if (http.status != 404){
         alert("Sorry, you just got a 404")
-    else
-        window.location.reload();
-}
-
+    }
 
