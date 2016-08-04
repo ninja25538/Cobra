@@ -20,5 +20,7 @@ function Submit(){
     }
     
 }
+console.log(c);
+console.log(d);
 
 
