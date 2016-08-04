@@ -11,7 +11,7 @@ function Submit(){
     var atpos = x.indexOf("@");
     var dotpos = x.lastIndexOf(".");
 
-    if (a == null || a == "" || b == null || b == "" || c == "" || c == null || d == "" || d == null atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= x.length || month =="Month" || birthday == "Day" || year == "Year") {
+    if (a == null || a == "" || b == null || b == "" || c == "" || c == null || d == "" || d == null || atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= x.length || month =="Month" || birthday == "Day" || year == "Year") {
         Msg.textContent = "Please fill out all information correctly!";
         return false;
     } else {
