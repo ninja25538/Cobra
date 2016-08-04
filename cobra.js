@@ -4,7 +4,7 @@ function Submit(){
     var b = document.forms["form"]["Last_Name"].value;
     var c = document.forms["form"]["Username"].value;
     var d = document.forms["form"]["Password"].value;
-    if (a == null || a == "" || b == null || b == "" || c == "" || c == null d == "" || d == null) {
+    if (a == null || a == "" || b == null || b == "" || c == "" || c == null || d == "" || d == null) {
         Msg.textContent = "Please fill out all information correctly!";
         return false;
     } else {
