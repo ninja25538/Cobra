@@ -18,4 +18,5 @@ function Submit(){
       Msg.textContent = "Registration succesful!"
       window.location.replace("Home");
     }
+}
 
