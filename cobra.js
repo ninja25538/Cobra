@@ -8,15 +8,24 @@ function Submit(){
     localStorage.month = document.forms["form"]["birthday_month"].value;
     localStorage.day = document.forms["form"]["birthday"].value;
     localStorage.year = document.forms["form"]["birthday_year"].value;
+    var fn = localStorage.a;
+    var ln = localStorage.b;
+    var u = localStorage.c;
+    var p = localStorage.d;
+    var e = localStorage.l;
+    var m = localStorage.month;
+    var d = localStorage.day;
+    var y = localStorage.year;
+    
 
-    if (a == null || a == "" || b == null || b == "" || c == "" || c == null || d == "" || d == null || l == null || l == "" || month == "Month" || day == "Day" || year == "Year") {
+    if (fn == null || fn == "" || ln == null || ln == "" || u == "" || u == null || p == "" || p == null || e == null || e == "" || m == "Month" || d == "Day" || y == "Year") {
         Msg.textContent = "Please fill out all information correctly!";
         return false;
     } else {
       Msg.textContent = "Registration succesful!"
       window.location.replace("Home");
-      console.log(c);
-      console.log(d);
+      console.log(u);
+      console.log(p);
     }
   
 }
