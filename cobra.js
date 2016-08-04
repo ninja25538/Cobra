@@ -1,13 +1,13 @@
 var Msg = document.getElementById("Msg");
 function Submit(){
-    var a = document.forms["form"]["First_Name"].value;
-    var b = document.forms["form"]["Last_Name"].value;
-    var c = document.forms["form"]["Username"].value;
-    var d = document.forms["form"]["Password"].value;
-    var x = document.forms["form"]["Email"].value;
-    var month = document.forms["form"]["birthday_month"].value;
-    var day = document.forms["form"]["birthday"].value;
-    var year = document.forms["form"]["birthday_year"].value;
+    localStorage.a = document.forms["form"]["First_Name"].value;
+    localStorage.b = document.forms["form"]["Last_Name"].value;
+    localStorage.c = document.forms["form"]["Username"].value;
+    localStorage.d = document.forms["form"]["Password"].value;
+    localStorage.x = document.forms["form"]["Email"].value;
+    localStorage.month = document.forms["form"]["birthday_month"].value;
+    localStorage.day = document.forms["form"]["birthday"].value;
+    localStorage.year = document.forms["form"]["birthday_year"].value;
     var atpos = x.indexOf("@");
     var dotpos = x.lastIndexOf(".");
 
@@ -18,6 +18,7 @@ function Submit(){
       Msg.textContent = "Registration succesful!"
       window.location.replace("Home");
     }
+    
 }
 
 
