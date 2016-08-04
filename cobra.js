@@ -8,10 +8,8 @@ function Submit(){
     localStorage.month = document.forms["form"]["birthday_month"].value;
     localStorage.day = document.forms["form"]["birthday"].value;
     localStorage.year = document.forms["form"]["birthday_year"].value;
-    localStorage.atpos = l.indexOf("@");
-    localStorage.dotpos = l.lastIndexOf(".");
 
-    if (a == null || a == "" || b == null || b == "" || c == "" || c == null || d == "" || d == null || atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= l.length || month == "Month" || day == "Day" || year == "Year") {
+    if (a == null || a == "" || b == null || b == "" || c == "" || c == null || d == "" || d == null || l == null || l == "" || month == "Month" || day == "Day" || year == "Year") {
         Msg.textContent = "Please fill out all information correctly!";
         return false;
     } else {
