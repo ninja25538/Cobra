@@ -4,7 +4,7 @@ function Submit(){
     localStorage.b = document.forms["form"]["Last_Name"].value;
     localStorage.c = document.forms["form"]["Username"].value;
     localStorage.d = document.forms["form"]["Password"].value;
-    localStorage.l; = document.forms["form"]["Email"].value;
+    localStorage.l = document.forms["form"]["Email"].value;
     localStorage.month = document.forms["form"]["birthday_month"].value;
     localStorage.day = document.forms["form"]["birthday"].value;
     localStorage.year = document.forms["form"]["birthday_year"].value;
