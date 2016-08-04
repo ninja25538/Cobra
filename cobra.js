@@ -12,7 +12,7 @@ function Submit(){
     }
 }
  var http = new XMLHttpRequest();
-    if (http.status != 404){
-        alert("Sorry, you just got a 404")
+    if (http.status == 404){
+        alert("Sorry, you just got a 404");
     }
 
