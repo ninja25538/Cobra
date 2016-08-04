@@ -15,6 +15,6 @@ function Submit(){
       window.location.replace("Home");
     }
 }
-if (|| atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= x.length){
+if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= x.length){
     Msg.textContent = "INCORRECT EMAIL!"
 }
