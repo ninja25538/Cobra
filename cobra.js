@@ -11,8 +11,3 @@ function Submit(){
       window.location.replace("Welcome.html");
     }
 }
- var http = new XMLHttpRequest();
-    if (http.status == 404){
-        alert("Sorry, you just got a 404");
-    }
-
