@@ -4,14 +4,14 @@ function Submit(){
     localStorage.b = document.forms["form"]["Last_Name"].value;
     localStorage.c = document.forms["form"]["Username"].value;
     localStorage.d = document.forms["form"]["Password"].value;
-    localStorage.x = document.forms["form"]["Email"].value;
+    localStorage.l; = document.forms["form"]["Email"].value;
     localStorage.month = document.forms["form"]["birthday_month"].value;
     localStorage.day = document.forms["form"]["birthday"].value;
     localStorage.year = document.forms["form"]["birthday_year"].value;
-    localStorage.atpos = x.indexOf("@");
-    localStorage.dotpos = x.lastIndexOf(".");
+    localStorage.atpos = l.indexOf("@");
+    localStorage.dotpos = l.lastIndexOf(".");
 
-    if (a == null || a == "" || b == null || b == "" || c == "" || c == null || d == "" || d == null || atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= x.length || month == "Month" || day == "Day" || year == "Year") {
+    if (a == null || a == "" || b == null || b == "" || c == "" || c == null || d == "" || d == null || atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= l.length || month == "Month" || day == "Day" || year == "Year") {
         Msg.textContent = "Please fill out all information correctly!";
         return false;
     } else {
