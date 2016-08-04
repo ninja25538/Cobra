@@ -17,10 +17,11 @@ function Submit(){
     } else {
       Msg.textContent = "Registration succesful!"
       window.location.replace("Home");
+      console.log(c);
+      console.log(d);
     }
-    
+  
 }
-console.log(c);
-console.log(d);
+
 
 
