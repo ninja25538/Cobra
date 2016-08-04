@@ -4,7 +4,7 @@ function Submit(){
     var b = document.forms["form"]["Last_Name"].value;
     var c = document.forms["form"]["Username"].value;
     var d = document.forms["form"]["Password"].value;
-    var x = document.forms["myForm"]["email"].value;
+    var x = document.forms["form"]["Email"].value;
     var atpos = x.indexOf("@");
     var dotpos = x.lastIndexOf(".");
     if (a == null || a == "" || b == null || b == "" || c == "" || c == null || d == "" || d == null || atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= x.length) {
