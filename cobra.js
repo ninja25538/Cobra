@@ -11,5 +11,13 @@ function Submit(){
       window.location.replace("Welcome.html");
     }
 }
+ var http = new XMLHttpRequest();
+    http.open('HEAD', url, false);
+    http.send();
+    if (http.status != 404)
+        alert("Sorry, you just got a 404")
+    else
+        window.location.reload();
+}
 
 
