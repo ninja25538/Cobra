@@ -8,6 +8,6 @@ function Submit(){
         return false;
     } else {
       Msg.textContent = "Registration succesful!"
-      window.location.replace("Welcome.html");
+      window.location.replace("Welcome");
     }
 }
