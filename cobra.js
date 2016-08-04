@@ -5,7 +5,6 @@ function Submit(){
     var c = document.forms["form"]["Username"].value;
     var d = document.forms["form"]["Password"].value;
     var x = document.forms["form"]["Email"].value;
-    var year = document.forms["form"]["birthday_year"].value;
     var atpos = x.indexOf("@");
     var dotpos = x.lastIndexOf(".");
 
@@ -16,7 +15,6 @@ function Submit(){
       Msg.textContent = "Registration succesful!"
       window.location.replace("Home");
     }
-    console.log(year);
 }
 
 
