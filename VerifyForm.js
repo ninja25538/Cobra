@@ -27,6 +27,6 @@ function Submit(){
     }
   
 }
-
+console.log(u);
 
 
