@@ -1,3 +1,13 @@
+function User(first_name, last_name, username, password, email, birthday_month, birthday, birthday_year){
+    this.first_name = first_name;
+    this.last_name = last_name;
+    this.username = username;
+    this.password = password;
+    this.email = email;
+    this.birthday_month = birthday_month;
+    this.birhday = birthday;
+    this.birthday_year = birthday_year;
+}
 var Msg = document.getElementById("Msg");
 function Submit(){
     localStorage.a = document.forms["form"]["First_Name"].value;
@@ -22,11 +32,13 @@ function Submit(){
         Msg.textContent = "Please fill out all information correctly!";
         return false;
     } else {
+      var account = new User(fn, ln, u, p, e, m, d, y);
       Msg.textContent = "Registration succesful!"
       console.log(u);
     }
   
 }
+
 console.log(u);
 
 
