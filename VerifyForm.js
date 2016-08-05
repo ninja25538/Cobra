@@ -23,7 +23,7 @@ function Submit(){
         return false;
     } else {
       Msg.textContent = "Registration succesful!"
-      window.location.replace("Home");
+      console.log(u);
     }
   
 }
