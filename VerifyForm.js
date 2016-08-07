@@ -1,5 +1,5 @@
 var users = [];
-function User(first_name, last_name, username, password, email, birthday_month, birthday, birthday_year){
+function User(first_name, last_name, username, password, email,            birthday_month, birthday, birthday_year){
     this.first_name = first_name;
     this.last_name = last_name;
     this.username = username;
@@ -20,7 +20,7 @@ function Submit(){
     var day = document.forms["form"]["birthday"].value;
     var year = document.forms["form"]["birthday_year"].value;
     localStorage.setItem("fn", a);
-    var fname = localStorage.getItem("fn");
+
     var ln = localStorage.b;
     var u = localStorage.c;
     var p = localStorage.d;
@@ -28,20 +28,20 @@ function Submit(){
     var m = localStorage.month;
     var d = localStorage.day;
     var y = localStorage.year;
-    
 
-    if (ln == null) {
+
+    if (ln == null || ln == "" || u == "" || u == null || p == "" || p == null || e == null || e == "" || m == "Month" || d == "Day" || y == "Year") {
         Msg.textContent = "Please fill out all information correctly!";
         return false;
     } else {
-      var account = new User(ln, u, p, e, m, d, y);
-       var wha = localStorage.getItem("fn");
-       localStorage.setItem("account", JSON.stringify(account));
-       var storedUnames = JSON.parse(localStorage.getItem("account"));
-      users.push(wha);
-      Msg.textContent = "Registration succesful!";
+        var account = new User(ln, u, p, e, m, d, y);
+        var wha = localStorage.getItem("fn");
+        users.push(wha);
+        Msg.textContent = "Registration succesful!"
+        console.log(users);
     }
-  
+
+}
 }
 
 
