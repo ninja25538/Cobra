@@ -1,4 +1,4 @@
-var users = [];
+localStorage.setItem("users", []);
 function User(first_name, last_name, username, password, email, birthday_month, birthday, birthday_year){
     this.first_name = first_name;
     this.last_name = last_name;
@@ -36,9 +36,10 @@ function Submit(){
     } else {
       var account = new User(ln, u, p, e, m, d, y);
        var wha = localStorage.getItem("fn");
-      users.push(wha);
+       var use = localStorage.getItem("users")
+      use.push(wha);
       Msg.textContent = "Registration succesful!"
-      console.log(users);
+      console.log(use);
     }
   
 }
