@@ -30,7 +30,7 @@ function Submit(){
     var y = localStorage.year;
     
 
-    if (ln == null || ln == "" || u == "" || u == null || p == "" || p == null || e == null || e == "" || m == "Month" || d == "Day" || y == "Year") {
+    if (ln == null) {
         Msg.textContent = "Please fill out all information correctly!";
         return false;
     } else {
