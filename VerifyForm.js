@@ -39,8 +39,7 @@ function Submit(){
        localStorage.setItem("users", JSON.stringify(users));
        var storedUnames = JSON.parse(localStorage.getItem("users"));
       users.push(wha);
-      Msg.textContent = "Registration succesful!"
-      console.log(use);
+      Msg.textContent = "Registration succesful!";
     }
   
 }
