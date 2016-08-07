@@ -1,3 +1,4 @@
+var users = [];
 function User(first_name, last_name, username, password, email, birthday_month, birthday, birthday_year){
     this.first_name = first_name;
     this.last_name = last_name;
@@ -33,12 +34,11 @@ function Submit(){
         return false;
     } else {
       var account = new User(fn, ln, u, p, e, m, d, y);
+      users.push(u);
       Msg.textContent = "Registration succesful!"
-      console.log(u);
+      console.log(users);
     }
   
 }
-
-console.log(u);
 
 
