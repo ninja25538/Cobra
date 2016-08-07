@@ -11,15 +11,15 @@ function User(first_name, last_name, username, password, email, birthday_month, 
 }
 var Msg = document.getElementById("Msg");
 function Submit(){
-    localStorage.a = document.forms["form"]["First_Name"].value;
-    localStorage.b = document.forms["form"]["Last_Name"].value;
-    localStorage.c = document.forms["form"]["Username"].value;
-    localStorage.d = document.forms["form"]["Password"].value;
-    localStorage.l = document.forms["form"]["Email"].value;
-    localStorage.month = document.forms["form"]["birthday_month"].value;
-    localStorage.day = document.forms["form"]["birthday"].value;
-    localStorage.year = document.forms["form"]["birthday_year"].value;
-    var fn = localStorage.a;
+    var a = document.forms["form"]["First_Name"].value;
+    var b = document.forms["form"]["Last_Name"].value;
+    var c = document.forms["form"]["Username"].value;
+    var d = document.forms["form"]["Password"].value;
+    var l = document.forms["form"]["Email"].value;
+    var month = document.forms["form"]["birthday_month"].value;
+    var day = document.forms["form"]["birthday"].value;
+    var year = document.forms["form"]["birthday_year"].value;
+    localStorage.setItem("fn", a);
     var ln = localStorage.b;
     var u = localStorage.c;
     var p = localStorage.d;
@@ -34,7 +34,8 @@ function Submit(){
         return false;
     } else {
       var account = new User(fn, ln, u, p, e, m, d, y);
-      users.push(u);
+      var wha = localStorage.getItem("fn");
+      users.push(wha);
       Msg.textContent = "Registration succesful!"
       console.log(users);
     }
