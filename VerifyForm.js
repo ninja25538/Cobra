@@ -20,7 +20,7 @@ function Submit(){
     var day = document.forms["form"]["birthday"].value;
     var year = document.forms["form"]["birthday_year"].value;
     localStorage.setItem("fn", a);
-    
+    var fname = localStorage.getItem("fn");
     var ln = localStorage.b;
     var u = localStorage.c;
     var p = localStorage.d;
@@ -36,8 +36,8 @@ function Submit(){
     } else {
       var account = new User(ln, u, p, e, m, d, y);
        var wha = localStorage.getItem("fn");
-       localStorage.setItem("users", JSON.stringify(users));
-       var storedUnames = JSON.parse(localStorage.getItem("users"));
+       localStorage.setItem("account", JSON.stringify(account));
+       var storedUnames = JSON.parse(localStorage.getItem("account"));
       users.push(wha);
       Msg.textContent = "Registration succesful!";
     }
