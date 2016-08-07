@@ -34,7 +34,7 @@ function Submit(){
         Msg.textContent = "Please fill out all information correctly!";
         return false;
     } else {
-      var account = new User(fn, ln, u, p, e, m, d, y);
+      var account = new User(ln, u, p, e, m, d, y);
        var wha = localStorage.getItem("fn");
       users.push(wha);
       Msg.textContent = "Registration succesful!"
