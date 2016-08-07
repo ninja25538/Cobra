@@ -20,6 +20,7 @@ function Submit(){
     var day = document.forms["form"]["birthday"].value;
     var year = document.forms["form"]["birthday_year"].value;
     localStorage.setItem("fn", a);
+    
     var ln = localStorage.b;
     var u = localStorage.c;
     var p = localStorage.d;
@@ -29,12 +30,12 @@ function Submit(){
     var y = localStorage.year;
     
 
-    if (fn == null || fn == "" || ln == null || ln == "" || u == "" || u == null || p == "" || p == null || e == null || e == "" || m == "Month" || d == "Day" || y == "Year") {
+    if (ln == null || ln == "" || u == "" || u == null || p == "" || p == null || e == null || e == "" || m == "Month" || d == "Day" || y == "Year") {
         Msg.textContent = "Please fill out all information correctly!";
         return false;
     } else {
       var account = new User(fn, ln, u, p, e, m, d, y);
-      var wha = localStorage.getItem("fn");
+       var wha = localStorage.getItem("fn");
       users.push(wha);
       Msg.textContent = "Registration succesful!"
       console.log(users);
